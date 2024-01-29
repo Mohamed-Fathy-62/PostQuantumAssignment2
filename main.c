@@ -22,8 +22,7 @@ int main()
 		printBin(msg^m2, TK_N);
 		printf("\n");
 	}
-	printf("Done.\n");
-	//pause();
+
     return 0;
 }
 
