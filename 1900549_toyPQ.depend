@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1706549281 source:c:\users\moham\onedrive\desktop\projects\1900549_toypq\main.c
+	<stdio.h>
+	<stdlib.h>
+	"toy.h"
+
+1706549024 c:\users\moham\onedrive\desktop\projects\1900549_toypq\toy.h
+
+1706540288 c:\users\moham\onedrive\desktop\projects\1900549_toypq\toy.c
+	"toy.h"
+
+1706549224 source:c:\users\moham\onedrive\desktop\projects\1900549_toypq\toy.c
+	<stdio.h>
+	<stdlib.h>
+	"toy.h"
+
