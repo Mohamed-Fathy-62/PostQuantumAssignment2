@@ -83,10 +83,10 @@ void toyEnc(const short *A, const short *t, int plain, short *u, short *v){
     toyFillSmall(e2, TK_N);
 
     toyMulmTv(u, A, r); 						// u = AT.r + el
-    //toy_add(u, u, e1, TK_K * TK_N, 0);
+
 
     toyDot(v, t, r); 							// v = tT.r + e2 + plainxq/2
-    //toy_add(v, v, e2, TK_N, 9);
+
     for (int k = 0; k < TK_N; ++k)
         v[k] = (v[k] + ((TK_Q >> 1) & -(plain >> k & 1))) % TK_Q;
 }
@@ -103,10 +103,9 @@ int toyDec(const short *s, const short *u, const short *v){
             val -= TK_Q;
 		printf("%5d ", val);
         int bit = abs(val) > TK_Q / 4;
-        // int bit = abs(val)>TK_Q/4;
-        // int bit = val>TK_Q/4 && val<TK_Q*3/4;
+
         plain |= bit << k;
-        //plain |= bit << (TK_N-1-k);
+
     }
     return plain;
 }
